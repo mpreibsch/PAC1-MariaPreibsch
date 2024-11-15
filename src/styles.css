@@ -1,0 +1,698 @@
+/*General*/
+
+*,
+*:before,
+*:after {
+    margin:0;
+    padding:0;
+}
+
+.container{
+  width: 100%; 
+  padding-left: 1rem;
+  padding-right: 1rem;           
+}
+
+.container-fluid{
+  width:100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*Dispositius grants*/ 
+
+  body{
+    background-color: #f6f8cd;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: #160152;
+    line-height: 1.5;
+  }
+
+  h1{
+    color: #fecc00;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.7rem;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    margin-left:15%;
+    margin-right: 15%;
+  }
+
+/*Header*/
+
+  header{
+    background-image: url(./img/header.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 0;
+    padding-right: 0;
+    display:grid;
+    grid-template-rows: 45px 175px 45px;
+  }
+
+  .logo{
+    width: auto;
+    height:175px;
+  }
+
+  .header{
+    grid-row-start: 2;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+
+.obrir-menu{
+  display:block;
+  text-align: left;
+  grid-row-start: 3;
+  padding-left: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+  .menulogo{
+    height:40px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.menú{
+  visibility:hidden;
+  position:absolute;
+  background-color: #160152;
+  height: 500px;
+  width: 200px;
+  text-align: left;
+  align-content: center;
+  padding-left: 1.5rem;
+ }
+ .menú.visible{
+  visibility: visible;
+ }
+
+.tancar-menu button{
+  font-size: 1rem;
+  font-weight: bold;
+  color:#160152;
+  background-color: #fecc00;
+  padding: 0.2rem 0.35rem;
+  border-radius: 50%;
+  border-color: #160152;
+  margin-bottom: 70px;
+  margin-top: 0;
+  display: block;
+  cursor:pointer;
+  }
+
+.menú ul{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.menú ul li{
+  font-size: 1.3rem;
+}
+
+.menú ul li a{
+  text-decoration: none;
+  color:#fecc00;
+}
+
+.menú ul li a:hover{
+  text-decoration: underline;
+  color:#fecc00;
+}
+
+/*Footer*/
+
+  footer{
+    background-image: url(./img/footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer{
+    font-size: 0.9rem;
+    color:#f6f8cd;
+    margin-bottom: 0;
+  }
+
+  .footer p{
+    margin-bottom:0;
+    width:100%;
+    padding:0;
+  }
+
+  nav li{
+    font-size:1.1rem;
+    list-style: none;
+    padding-bottom: 10px;
+  }
+
+  nav li:last-child{
+    padding-bottom: 30px;
+  }
+
+  nav li a{
+    text-decoration: none;
+    color:#fecc00;
+  }
+
+  nav li a:hover{
+    color:#160152;
+  }
+
+/*index.html*/
+
+  p, .intro{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  article p{
+    margin-top: 40px;
+  }
+
+  .index{
+    list-style: none;  
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+
+  .index li{
+    display:inline-block;  
+}
+
+  .index a{
+    text-decoration: none;
+    color:#006aa7;
+  }
+
+  .index a:hover{
+    color: #fecc00;
+  }
+
+  .fotoindex{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+  }
+
+  /*categoria.html*/
+
+  .mapa{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .mapa img{
+    width: 450px;
+    height: auto;
+  }
+
+  .ruta{
+    list-style: none;
+    line-height: 2.5;
+    text-align: left;
+    margin-left: 30%;
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  .rutap{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+  }
+
+  .ruta a{
+    text-decoration: none;
+    color:#006aa7;
+  }
+
+  .ruta a:hover{
+    color: #fecc00;
+  }
+
+  form ul{
+    text-align: left;
+    margin-left: 30%;
+    list-style: none;
+  }
+
+  form ul li{
+    line-height: 2;
+  }
+
+  .enviar{
+    color:#fecc00;
+    background-color: #006aa7;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    cursor: pointer;
+  }
+
+/*Pàgines de detall*/
+
+  .fotodetall{
+    width: 400px;
+    height: auto;
+  }
+
+  .peufoto{
+    font-size: 0.8rem;
+  }
+
+  .detall{
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .detall li{
+    display:inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    height:30px;
+    background-color: #006aa7;
+    padding:15px;
+    border-radius: 6px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .detall a{
+    font-weight: bold;
+    color:#fecc00;
+    text-decoration: none;
+  }
+
+  .detall a:hover{
+    color:#160152;
+  }
+
+  .museu{
+    text-decoration: none;
+    color:#006aa7;
+  }
+
+  .museu:hover{
+    color:#fecc00;
+  }
+
+  /*presentacio.html*/
+
+  .slider {
+    width: 500px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+  }
+  
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider img {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  
+  @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+  
+  .presentacio1{
+    margin-bottom: 90px;
+  }
+
+/*enllaços.html*/
+
+  .enllaç{
+    margin-bottom: 15px;
+  }
+
+  .museuenllaç{
+    list-style: none;
+    text-align: left;  
+  }
+
+  .museuenllaç li{
+    margin-left: 20%;
+    line-height: 2;
+  }
+
+  .museuenllaç li:last-child{
+    margin-bottom: 90px;
+  }
+
+  .museuenllaç li a{
+    color:#006aa7;
+    text-decoration: none;
+  }
+
+  .museuenllaç li a:hover{
+    color:#fecc00;
+    text-decoration: underline;
+  }
+  
+  h2{
+    color: #006aa7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 20%;
+    margin-bottom: 15px;
+  }
+
+/*Dispositius mitjans*/
+
+@media (max-width: 992px){
+
+/*General*/
+
+h1{
+  margin-left:10%;
+  margin-right: 10%;
+  font-size: 2.5rem;
+}
+
+p, .intro, article p{
+  padding-left: 10%;
+  padding-right: 10%; 
+}
+
+/*Header*/
+
+header{
+  height: 250px;
+  display:grid;
+  grid-template-rows: 45px 150px 45px;
+}
+
+.logo{
+  width: auto;
+  height:150px;
+}
+
+.menú{
+  width:170px;
+  height: 450px;
+}
+
+.menú ul li{
+  font-size: 1.1rem;
+}
+
+.obrir-menu{
+padding-left: 1rem;
+}
+
+/*Footer*/
+
+footer{
+height: 250px;
+}
+
+/*index.html*/
+
+.index{
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.index li{
+  margin-top:40px;
+}
+
+.fotoindex{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/*categoria.html*/
+
+.mapa img{
+  width: 400px;
+  height: auto;
+}
+
+  .ruta{
+    margin-left: 20%;
+  }
+
+.rutap{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+form ul{
+  margin-left: 20%;
+}
+
+/*Pàgines de detall*/
+
+.fotodetall{
+  width: 350px;
+  height: auto;
+}
+
+.detall{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.detall li{
+  height:30px;
+  width:250px;
+  background-color: #006aa7; 
+  margin-bottom: 40px;
+  padding:15px;
+}
+
+/*presentacio.html*/
+
+.slider {
+  width: 400px;
+  height: auto;
+}
+
+.presentacio1{
+  margin-top: 30px;
+}
+
+/*enllaços.html*/
+
+h2{
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.museuenllaç li{
+  margin-left: 10%;
+}
+}
+
+/*Dispositius petits*/
+
+@media (max-width: 768px){
+  
+/*General*/
+
+body{
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 2.2rem;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+p, .intro, .rutap, article p{
+  width: 92%;
+  text-align: justify;
+  margin-bottom: 40px;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;  
+}
+
+article p{
+  margin-top: 40px;
+}
+
+/*Header*/
+
+header{
+  height: 200px;
+  display:grid;
+  grid-template-rows: 35px 130px 35px;
+  }
+
+.logo{
+  width: 130px;
+  height:auto; 
+}
+
+.obrir-menu{
+  padding-left: 1rem;
+}
+
+  .menulogo{
+    height:25px;
+    width: 30px;
+    }
+
+.menú{
+  height: 400px;
+  width: 170px;
+  padding-left: 1rem;
+ }
+ 
+.tancar-menu button{
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+.menú ul li{
+  font-size: 1rem;
+}
+
+/*Footer*/
+
+footer{
+  height: 200px;
+}
+
+.footer{
+  font-size: 0.6rem;
+}
+
+nav li{
+  font-size:0.9rem;
+}
+
+/*index.html*/
+
+.index{
+  margin-bottom: 90px;
+}
+
+.index li{
+  margin-top:40px;
+}
+
+.fotoindex{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/*categoria.html*/
+
+.mapa img{
+  width: 300px;
+  height: auto;
+ }
+
+ .ruta{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+form ul{
+  margin-left: 40%;
+}
+
+/*Pàgines de detall*/
+
+.fotodetall{
+  width: 350px;
+  height: auto;
+}
+
+.detall{
+  margin-bottom: 90px;
+}
+
+.detall li{
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+/*presentacio.html*/
+
+.slider {
+	width: 350px;
+  height: auto;
+}
+
+/*enllaços.html*/
+
+h2{
+  font-size: 1.4rem;
+  text-align: left;
+  margin-left: 4%;
+  margin-bottom: 15px;
+}
+
+.museuenllaç li{
+  margin-left: 4%;
+}
+
+.museuenllaç li:last-child{
+  margin-bottom: 60px;
+}
+}

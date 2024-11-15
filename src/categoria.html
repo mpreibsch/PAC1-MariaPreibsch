@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>Explicació de la ruta per la Costa Oest de Suècia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explicació de la ruta">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+ 
+    </head>
+<body>
+  <include src="src/header.html"></include>
+    <main>
+      <h1>Ruta de 5 dies per la Costa Oest de Suècia</h1>
+      <p class="rutap">
+        Et proposem una ruta de 5 dies per la fantàstica Costa Oest de Suècia, començant des de Göteborg i acabant a Strömstad.
+        Aquesta costa està plena de pobles i vistes a l'arxipèlag espectaculars. 
+        És molt difícil fer una tria, però hem pensat en una ruta que et faci descobrir aquesta zona i potser et donarà ganes de tornar-hi en una altra ocasió.
+      </p>
+      <div class="mapa">
+      <img src="img/mapa.png" alt="Mapa de la ruta"/>
+    </div>  
+      <p class="rutap">
+          És una ruta que pots fer sol, en parella, amb amics o en família.
+          No hem posat allotjaments, perquè hi ha moltes opcions disponibles en aquesta regió, però si tens algun dubte o demanda, no dubtis en contactar-nos.
+        </p>
+      <ol class="ruta">
+        <li>
+          <a href="marstrand.html">Dia 1: Marstrand i parc d'animals Nordens Ark</a>
+        </li>
+        <li>
+          <a href="smoegen.html">Dia 2: Smögen</a>
+        </li>
+        <li>
+          <a href="fjallbacka.html">Dia 3: Fjällbacka i el museu Vitlycke</a>
+        </li>
+        <li>
+          <a href="stroemstad.html">Dia 4 i 5: Strömstad i safari de foques a les illes Koster</a>
+        </li>
+      </ol>
+   <p>
+    Un cop hagis visitat totes les etapes de la ruta et proposem que participis en aquesta petia enquesta i votis quin dia de la ruta et sembla més interessant:
+   </p>
+   <form>
+    <ul>
+      <li>
+        <input type="radio" name="dia1" id="dia1" value="dia1"/>
+        <label for="dia1">Dia 1</label>
+      </li>
+      <li>
+        <input type="radio" name="dia2" id="dia2" value="dia2"/>
+        <label for="dia2">Dia 2</label>
+      </li>
+      <li>
+        <input type="radio" name="dia3" id="dia3" value="dia3"/>
+        <label for="dia3">Dia 3</label>
+      </li>
+      <li>
+        <input type="radio" name="dia4" id="dia4" value="dia4"/>
+        <label for="dia4">Dies 4 i 5</label>
+      </li>
+    </ul>
+    
+  </form>
+    <button class="enviar" id="boto">Enviar</button>
+   </main>
+      <include src="src/footer.html"></include>
+</body>
+</html>
