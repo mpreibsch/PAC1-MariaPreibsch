@@ -19,11 +19,22 @@
         <p>
         El segon dia de ruta explorem Smögen, una de les joies de la costa oest de Suècia, és coneguda per les seves pintoresques cases de colors que decoren el seu port. 
         Aquestes encantadores construccions de fusta, pintades en tons vibrants de vermell, groc i blau, reflecteixen la rica tradició marinera de la zona. 
-        Passejant pel moll de Smögen, es pot sentir l'energia viva d'aquest poble pesquer, amb les seves cases que es combinen harmònicament amb el paisatge natural i el mar. 
-        </p> 
-        <img class="fotodetall" src="img/smogen2.png" alt="Vistes de les típiques cases de colors de Smögen"/>
+        </p>
+        <picture>
+            <source media="(max-width:768px)" srcset="img/categoria-da-m.jpg" width="350px">
+            <source media="(max-width:992px)" srcset="img/categoria-da-l.jpg" width="425px">
+            <img  class="fotodetall" src="img/categoria-xl.jpg" width="500px" alt="Vistes de les típiques cases de colors de Smögen"/>
+        </picture>
         <figcaption class="peufoto">
             Vistes de les típiques cases de colors de Smögen
+        </figcaption>
+        <P>
+        Passejant pel moll de Smögen, es pot sentir l'energia viva d'aquest poble pesquer, amb les seves cases que es combinen harmònicament amb el paisatge natural i el mar. 
+        </p> 
+        <img class="fotodetall" srcset="img/smogen2-s.jpg 400w, img/smogen2-m.jpg 600w, img/smogen2-l.jpg 800w, img/smogen2-xl.jpg 1000w" 
+        src="img/smogen2-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Passejant pel moll de Smögen"/>
+        <figcaption class="peufoto">
+            Passejant pel moll de Smögen
         </figcaption>
         <p>
         La gastronomia de Smögen és un altre dels seus grans atractius. 
@@ -31,7 +42,8 @@
         Les famoses <span lang="sv" ><i>Smögenräkor</i></span>, les gambes de Smögen, són un autèntic plaer per al paladar, servides amb pa fresc i maionesa casolana. Els sabors autèntics i la qualitat dels productes del mar converteixen cada àpat en una experiència memorable. 
         Els restaurants, sovint situats en antigues cases de pescadors, ofereixen no només menjar excel·lent sinó també un ambient càlid i acollidor.
         </p>
-        <img class="fotodetall" src="img/smogen1.png" alt="Vistes de Smögen"/>
+        <img class="fotodetall" srcset="img/smogen1-s.jpg 400w, img/smogen1-m.jpg 600w, img/smogen1-l.jpg 800w, img/smogen1-xl.jpg 1000w" 
+        src="img/smogen1-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Vistes de Smögen"/>
         <figcaption class="peufoto">
             Vistes del poble Smögen
         </figcaption>        
@@ -42,13 +54,13 @@
         </p>
     </article>
     <ul class="detall">
-        <li>
+        <li class="detall1">
             <a href="marstrand.html">Dia 1 de la ruta</a>
         </li>
-        <li>
+        <li class="detall1">
             <a href="fjallbacka.html">Dia 3 de la ruta</a>
         </li>
-        <li>
+        <li class="detall1">
             <a href="stroemstad.html">Dies 4 i 5 de la ruta</a>
         </li>
     </ul>

@@ -7,22 +7,10 @@
     padding:0;
 }
 
-.container{
-  width: 100%; 
-  padding-left: 1rem;
-  padding-right: 1rem;           
-}
-
-.container-fluid{
-  width:100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 /*Dispositius grants*/ 
 
   body{
-    background-color: #f6f8cd;
+    background-color: #f8fad0;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
@@ -44,7 +32,7 @@
 /*Header*/
 
   header{
-    background-image: url(./img/header.png);
+    background-image: url(img/header-l.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 275px;
@@ -55,7 +43,6 @@
     display:grid;
     grid-template-rows: 45px 175px 45px;
   }
-
   .logo{
     width: auto;
     height:175px;
@@ -135,7 +122,7 @@
 /*Footer*/
 
   footer{
-    background-image: url(./img/footer.png);
+    background-image: url(img/footer-l.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 275px;
@@ -148,34 +135,19 @@
     justify-content: center;
   }
 
-  .footer{
-    font-size: 0.9rem;
-    color:#f6f8cd;
-    margin-bottom: 0;
-  }
-
-  .footer p{
-    margin-bottom:0;
-    width:100%;
-    padding:0;
-  }
-
-  nav li{
+  .footer nav li{
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size:1.1rem;
     list-style: none;
-    padding-bottom: 10px;
   }
 
-  nav li:last-child{
-    padding-bottom: 30px;
-  }
-
-  nav li a{
+  .footer nav li a{
     text-decoration: none;
     color:#fecc00;
   }
 
-  nav li a:hover{
+  .footer nav li a:hover{
     color:#160152;
   }
 
@@ -199,8 +171,10 @@
   }
 
   .index li{
-    display:inline-block;  
-}
+    display:inline-flex;  
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 
   .index a{
     text-decoration: none;
@@ -211,14 +185,37 @@
     color: #fecc00;
   }
 
-  .fotoindex{
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    padding-left: 100px;
+  .fotoindex1{
+    background-image: url(img/categoria-svg.svg);
+    width: auto;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    clip-path: polygon(0% 45%, 0% 100%, 12% 100%, 12% 65%, 68% 65%, 68% 100%, 80% 100%, 80% 35%, 84% 28%, 95% 32%, 100% 20%, 83% 10%, 78% 0%, 75% 8%, 68% 10%, 50% 35%, 15% 35%);
     padding-right: 100px;
+    padding-left: 100px;
     padding-top: 10px;
   }
+
+  .fotoindex2{
+    background-image: url(img/documentació-svg.svg);
+    width: auto;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    clip-path: polygon(100% 45%, 100% 100%, 88% 100%, 88% 65%, 32% 65%, 32% 100%, 20% 100%, 20% 35%, 16% 28%, 5% 32%, 0% 20%, 17% 10%, 22% 0%, 25% 8%, 32% 10%, 50% 35%, 85% 35%);
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 10px;
+  }
+
+  .index p{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
 
   /*categoria.html*/
 
@@ -239,12 +236,30 @@
     margin-left: 30%;
     padding-top: 30px;
     padding-bottom: 90px;
+    position: relative;
+  }
+
+  .ruta img{
+    width:80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    position: absolute;
+  }
+
+  .ruta p{
+    margin-left: 95px;
+    padding-left: 0;
   }
 
   .rutap{
     padding-left: 20%;
     padding-right: 20%;
     text-align: justify;
+  }
+
+  .ruta li{
+    display: flex;
   }
 
   .ruta a{
@@ -280,8 +295,7 @@
 /*Pàgines de detall*/
 
   .fotodetall{
-    width: 400px;
-    height: auto;
+    border-radius: 15px;
   }
 
   .peufoto{
@@ -315,6 +329,18 @@
 
   .detall a:hover{
     color:#160152;
+    transition: 0.8s;
+  }
+
+  .detall1:hover{
+    animation: shake 1s ;
+  }
+
+  @keyframes shake{
+    0%{transform: rotate(0deg)}
+    20%{transform: rotate(30deg)}
+    80%{transform: rotate(-30deg)}
+    100%{transform: rotate(30deg)}
   }
 
   .museu{
@@ -329,8 +355,6 @@
   /*presentacio.html*/
 
   .slider {
-    width: 500px;
-    height: auto;
     margin: 50px auto 0;
     overflow: hidden;
   }
@@ -348,8 +372,8 @@
   }
   
   .slider img {
-    width: 100%;
     padding-bottom: 40px;
+    border-radius: 15px;
   }
   
   @keyframes slide {
@@ -367,7 +391,19 @@
   }
   
   .presentacio1{
-    margin-bottom: 90px;
+    margin-bottom: 40px;
+  }
+
+  #avio{
+    animation: avio 4s infinite linear;
+  }
+
+  @keyframes avio{
+    0%{transform: rotate(0deg)}
+    20%{transform: rotate(30deg)}
+    40%{transform: rotate(60deg)}
+    60%{transform: rotate(90deg)}
+    100%{transform: translateX(700px) translateY(-400px) rotate(90deg)}
   }
 
 /*enllaços.html*/
@@ -430,6 +466,9 @@ p, .intro, article p{
 /*Header*/
 
 header{
+  background-image: url(img/header-m.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
   height: 250px;
   display:grid;
   grid-template-rows: 45px 150px 45px;
@@ -450,28 +489,30 @@ header{
 }
 
 .obrir-menu{
-padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 /*Footer*/
 
 footer{
-height: 250px;
+  background-image: url(img/footer-m.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
 }
 
 /*index.html*/
 
 .index{
   margin-bottom: 90px;
-  display: flex;
-  flex-direction: column;
 }
 
 .index li{
   margin-top:40px;
 }
 
-.fotoindex{
+.fotoindex1, .fotoindex2{
+  width: 100px;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -483,9 +524,18 @@ height: 250px;
   height: auto;
 }
 
-  .ruta{
-    margin-left: 20%;
-  }
+.ruta{
+  margin-left: 20%; 
+}
+
+/*.ruta img{
+  width: 75px;
+}*/
+
+.ruta p{
+  margin-left: 90px;
+  padding-left: 0;
+}
 
 .rutap{
   padding-left: 10%;
@@ -497,11 +547,6 @@ form ul{
 }
 
 /*Pàgines de detall*/
-
-.fotodetall{
-  width: 350px;
-  height: auto;
-}
 
 .detall{
   display: flex;
@@ -521,13 +566,16 @@ form ul{
 
 /*presentacio.html*/
 
-.slider {
-  width: 400px;
-  height: auto;
+.presentacio1{
+  margin-top: 10px;
 }
 
-.presentacio1{
-  margin-top: 30px;
+@keyframes avio{
+  0%{transform: rotate(0deg)}
+  20%{transform: rotate(30deg)}
+  40%{transform: rotate(60deg)}
+  60%{transform: rotate(90deg)}
+  100%{transform: translateX(500px) translateY(-300px) rotate(90deg)}
 }
 
 /*enllaços.html*/
@@ -560,7 +608,7 @@ h1{
 }
 
 p, .intro, .rutap, article p{
-  width: 92%;
+  width: 90%;
   text-align: justify;
   margin-bottom: 40px;
   padding-left: 1.3rem;
@@ -574,6 +622,9 @@ article p{
 /*Header*/
 
 header{
+  background-image: url(img/header-s.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
   height: 200px;
   display:grid;
   grid-template-rows: 35px 130px 35px;
@@ -611,14 +662,15 @@ header{
 /*Footer*/
 
 footer{
+  background-image: url(img/footer-s.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
   height: 200px;
 }
 
-.footer{
-  font-size: 0.6rem;
-}
-
-nav li{
+.footer nav li{
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-size:0.9rem;
 }
 
@@ -626,15 +678,22 @@ nav li{
 
 .index{
   margin-bottom: 90px;
+  text-align: center;
 }
 
 .index li{
   margin-top:40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.fotoindex{
-  padding-left: 60px;
-  padding-right: 60px;
+.fotoindex1, .fotoindex2{
+  width: 100px;
+  margin-left: 25%;
+}
+
+.fotoindex2{
+  clip-path: polygon(0% 45%, 0% 100%, 12% 100%, 12% 65%, 68% 65%, 68% 100%, 80% 100%, 80% 35%, 84% 28%, 95% 32%, 100% 20%, 83% 10%, 78% 0%, 75% 8%, 68% 10%, 50% 35%, 15% 35%);
 }
 
 /*categoria.html*/
@@ -651,16 +710,21 @@ nav li{
   padding-bottom: 30px;
 }
 
+.ruta li{
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.ruta p{
+  margin-left: 95px;
+  padding-left: 0;
+}
+
 form ul{
   margin-left: 40%;
 }
 
 /*Pàgines de detall*/
-
-.fotodetall{
-  width: 350px;
-  height: auto;
-}
 
 .detall{
   margin-bottom: 90px;
@@ -674,9 +738,12 @@ form ul{
 
 /*presentacio.html*/
 
-.slider {
-	width: 350px;
-  height: auto;
+@keyframes avio{
+  0%{transform: rotate(0deg)}
+  20%{transform: rotate(30deg)}
+  40%{transform: rotate(60deg)}
+  60%{transform: rotate(90deg)}
+  100%{transform: translateX(370px) translateY(-300px) rotate(90deg)}
 }
 
 /*enllaços.html*/

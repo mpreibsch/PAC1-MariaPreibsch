@@ -19,7 +19,8 @@
         És molt difícil fer una tria, però hem pensat en una ruta que et faci descobrir aquesta zona i potser et donarà ganes de tornar-hi en una altra ocasió.
       </p>
       <div class="mapa">
-      <img src="img/mapa.png" alt="Mapa de la ruta"/>
+      <img srcset="img/mapa-s.png 400w, img/mapa-m.png 600w, img/mapa.png 800w" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px"
+      src="img/mapa.png" alt="Mapa de la ruta"/>
     </div>  
       <p class="rutap">
           És una ruta que pots fer sol, en parella, amb amics o en família.
@@ -27,20 +28,28 @@
         </p>
       <ol class="ruta">
         <li>
-          <a href="marstrand.html">Dia 1: Marstrand i parc d'animals Nordens Ark</a>
+          <a href="marstrand.html"><img srcset="img/marstrand-da-s.jpg, img/marstrand-da-m.jpg 1.5x, img/marstrand-da-l.jpg 2x" 
+          src="img/marstrand-da-l.jpg" alt="Marstrand"></a>
+          <p><a href="marstrand.html">Dia 1: Marstrand i parc d'animals Nordens Ark</a></p>
         </li>
         <li>
-          <a href="smoegen.html">Dia 2: Smögen</a>
+          <a href="smoegen.html"><img srcset="img/categoria-da-s.jpg, img/categoria-da-m.jpg 1.5x, img/categoria-da-l.jpg 2x" 
+          src="img/categoria-da-l.jpg"  alt="Smögen"></a>
+          <p><a href="smoegen.html">Dia 2: Smögen</a></p>
         </li>
         <li>
-          <a href="fjallbacka.html">Dia 3: Fjällbacka i el museu Vitlycke</a>
+          <a href="fjallbacka.html"><img srcset="img/fjallbacka1-da-s.jpg, img/fjallbacka1-da-m.jpg 1.5x, img/fjallbacka1-da-l.jpg 2x" 
+          src="img/fjallbacka1-da-l.jpg"  alt="Fjällbacka"></a>
+          <p><a href="fjallbacka.html">Dia 3: Fjällbacka i el museu Vitlycke</a></p>
         </li>
         <li>
-          <a href="stroemstad.html">Dia 4 i 5: Strömstad i safari de foques a les illes Koster</a>
+          <a href="stroemstad.html"><img srcset="img/safari-da-s.jpg, img/safari-da-m.jpg 1.5x, img/safari-da-l.jpg 2x" 
+          src="img/safari-da-l.jpg"  alt="Safari de foques"></a>
+          <p><a href="stroemstad.html">Dia 4 i 5: Strömstad i safari de foques a les illes Koster</a>
         </li>
       </ol>
    <p>
-    Un cop hagis visitat totes les etapes de la ruta et proposem que participis en aquesta petia enquesta i votis quin dia de la ruta et sembla més interessant:
+    Un cop hagis visitat totes les etapes de la ruta et proposem que participis en aquesta petita enquesta i votis quin dia de la ruta et sembla més interessant:
    </p>
    <form>
     <ul>
@@ -61,9 +70,8 @@
         <label for="dia4">Dies 4 i 5</label>
       </li>
     </ul>
-    
-  </form>
-    <button class="enviar" id="boto">Enviar</button>
+    </form>
+    <button type="submit" class="enviar" id="boto">Enviar</button>
    </main>
       <include src="src/footer.html"></include>
 </body>

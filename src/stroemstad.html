@@ -29,7 +29,11 @@
             Durant el recorregut, els guies experimentats comparteixen informació sobre les foques i el seu comportament, mentre que els passatgers gaudeixen de les espectaculars vistes de l'arxipèlag. 
             És una oportunitat única per connectar amb la natura i veure la vida salvatge de ben a prop.
         </p>
-        <img class="fotodetall" src="img/safari.png" alt="Foques en el seu hàbitat natural vistes des del vaixell"/>
+        <picture>
+            <source media="(max-width:768px)" srcset="img/safari-da-m.jpg" width="350px">
+            <source media="(max-width:992px)" srcset="img/safari-da-l.jpg" width="425px">
+            <img  class="fotodetall" src="img/safari-xl.jpg" width="500px" alt="Foques en el seu hàbitat natural vistes des del vaixell"/>
+        </picture>
         <figcaption class="peufoto">
             Foques en el seu hàbitat natural vistes des del vaixell
         </figcaption>
@@ -37,7 +41,8 @@
             A mesura que la barca s'endinsa en les aigües cristal·lines cap a Ursholmen, els visitants poden gaudir de la tranquil·litat i la bellesa d'aquest entorn protegit. 
             L'excursió no només ofereix la possibilitat d'observar foques, sinó també de veure una àmplia varietat d'aus marines i altres espècies locals. 
         </p>
-        <img class="fotodetall" src="img/ursholmen.png" alt="Vistes de l'illa d'Ursholmen"/>
+        <img class="fotodetall" srcset="img/ursholmen-s.jpg 400w, img/ursholmen-m.jpg 600w, img/ursholmen-l.jpg 800w, img/ursholmen-xl.jpg 1000w"
+        src="img/ursholmen-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Vistes de l'illa d'Ursholmen"/>
         <figcaption class="peufoto">
             Vistes de l'illa d'Ursholmen
         </figcaption>        
@@ -47,7 +52,8 @@
         Amb els seu paisatge rocós i la rica fauna marina, Ursholmen és un lloc ideal per als amants de la natura i els aficionats a les aus, oferint una experiència tranquil·la i allunyada del bullici de la vida urbana. 
         Aquesta illa és un testimoni de la bellesa natural intacta de la costa oest de Suècia.
         </p>
-        <img class="fotodetall" src="img/header.png" alt="Vistes de l'arxipèlag des de l'illa d'Ursholmen"/>
+        <img class="fotodetall" srcset="img/header1-s.jpg 400w, img/header1-m.jpg 600w, img/header1-l.jpg 800w, img/header1-xl.jpg 1000w" 
+        src="img/header1-xl.jpg" sizes="(max-width:768px) 350px, (max-width:992px) 425px, 500px" alt="Vistes de l'arxipèlag des de l'illa d'Ursholmen"/>
         <figcaption class="peufoto">
             Vistes de l'arxipèlag des de l'illa d'Ursholmen
         </figcaption>
@@ -56,13 +62,13 @@
         </p>
     </article>
     <ul class="detall">
-        <li>
+        <li class="detall1">
             <a href="marstrand.html">Dia 1 de la ruta</a>
         </li>
-        <li>
+        <li class="detall1">
             <a href="smoegen.html">Dia 2 de la ruta</a>
         </li>
-        <li>
+        <li class="detall1">
             <a href="fjallbacka.html">Dia 3 de la ruta</a>
         </li>
     </ul>
